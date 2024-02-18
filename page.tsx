@@ -13,7 +13,7 @@ const HomePage: FC = () => {
     const [Minutes, setMinutes] = useState(0)
     const [Seconds, setSeconds] = useState(0)
 
-    const endTime = "August, 26, 2024"
+    const endTime = "August 26, 2013 18:00:00 PDT"
 
     const getTime =()=>{
         const time = Date.parse(endTime) - Date.now()
@@ -33,13 +33,12 @@ const HomePage: FC = () => {
 
     return(
         <body className={styles.body}>
-            <div id="timer">
+            <div className={styles.div}> 
                 <Clock 
                 Days={Days} 
                 Hours={Hours}
                 Minutes={Minutes}
                 Seconds={Seconds}/>
-            
             </div>
         </body>
     )
